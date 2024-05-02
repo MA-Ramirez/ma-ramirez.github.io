@@ -1,12 +1,12 @@
 ---
-title: "Paper Title Number 3"
+title: "Diversity enables the jump towards cooperation for the Traveler’s Dilemma"
 collection: publications
 permalink: /publication/2015-10-01-paper-title-number-3
 excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+date: 2023-01-25
+venue: 'Scientific Reports'
+paperurl: 'https://www.nature.com/articles/s41598-023-28600-5'
+citation: 'Ramírez, M.A., Smerlak, M., Traulsen, A. et al. Diversity enables the jump towards cooperation for the Traveler’s Dilemma. Sci Rep 13, 1441 (2023). https://doi.org/10.1038/s41598-023-28600-5'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+Social dilemmas are situations in which collective welfare is at odds with individual gain. One widely studied example, due to the conflict it poses between human behaviour and game theoretic reasoning, is the Traveler’s Dilemma. The dilemma relies on the players’ incentive to undercut their opponent at the expense of losing a collective high payoff. Such individual incentive leads players to a systematic mutual undercutting until the lowest possible payoff is reached, which is the game’s unique Nash equilibrium. However, if players were satisfied with a high payoff -that is not necessarily higher than their opponent’s- they would both be better off individually and collectively. Here, we explain how it is possible to converge to this cooperative high payoff equilibrium. Our analysis focuses on decomposing the dilemma into a local and a global game. We show that players need to escape the local maximisation and jump to the global game, in order to reach the cooperative equilibrium. Using a dynamic approach, based on evolutionary game theory and learning theory models, we find that diversity, understood as the presence of suboptimal strategies, is the general mechanism that enables the jump towards cooperation.
