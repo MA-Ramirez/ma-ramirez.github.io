@@ -7,23 +7,36 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a doctoral researcher at [Max Planck Institute for Mathematics in the Sciences](https://www.mis.mpg.de) and [Max Planck Institute for Evolutionary Biology](https://www.evolbio.mpg.de/2169/en). My advisors are [Jürgen Jost](https://scholar.google.com/citations?user=hoY8se8AAAAJ&hl=en) and [Arne Traulsen](https://scholar.google.com/citations?hl=en&user=jlfYejEAAAAJ).
+#I am an applied mathematician
 
-My research focuses on analysing complex phenomena using mathematical tools, including 
-dynamical systems, agent-based modelling and evolutionary game theory. In particular, I employ tools from nonlinear dynamics, as well as stochastic simulations, to study decision-making at an individual and collective level.  My research also  includes interdisciplinary collaboration, most notably with experimental economists.
+I am currently working as a doctoral researcher at 
+* [Max Planck Institute for Mathematics in the Sciences](https://www.mis.mpg.de) (*supervised by [Jürgen Jost](https://scholar.google.com/citations?user=hoY8se8AAAAJ&hl=en)*)
+* [Max Planck Institute for Evolutionary Biology](https://www.evolbio.mpg.de/2169/en) (*supervised by [Arne Traulsen](https://scholar.google.com/citations?hl=en&user=jlfYejEAAAAJ)*)
+
+Topics
+* Complex phenomena modelling ✳️
+* Artificial and human intelligence interaction
+* Behaviour of financial markets
+* Individual and collective decision-making
+* Social and cultural evolution
+
+Tools
+* Dynamical systems 📈
+* Stochastic processes 🎲
+* Big data analysis 💻
+* Agent-based modelling 👥
+* Evolutionary game theory 🧩
+* Reinforcement learning 🔁
+* Chaos theory and nonlinear time series analysis 〰️
+
+Collaborations
+* My research includes interdisciplinary collaboration, most notably with experimental economists
 
 News
 ======
+
+* 🏛 🇺🇸 Accepted for a research visit at the Santa Fe Institute!
+* Talk accepted for JuliaCon 2024 🔴 🟢 🟣 
 * New preprint is out: [M.A. Ramírez, Y. Kolumbus, R. Nagel, D. Wolpert & J. Jost. (2023). Game manipulators - the strategic implications of binding contracts](https://arxiv.org/abs/2311.10586)
-
-Upcoming events
---------
-**2024**
-
-* June. Workshop on Markets, Cooperation and Voting. _Accepted talk_.
-* July. JuliaCon 2024. _Accepted talk_. 
-* July. Mathematical Models in Ecology and Evolution (MMEE). _Accepted talk_. 
-* October.  60th Anniversary of the Mathematics College Degree, Universidad de los Andes. _Invited talk_.
-* October. Research visit at the Santa Fe Institute.
 
 
