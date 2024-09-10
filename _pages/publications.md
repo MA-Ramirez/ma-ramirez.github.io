@@ -10,11 +10,13 @@ author_profile: true
 ### Peer-reviewed publications
 
 * **Ramírez, M.A.**, Smerlak M., Traulsen, A. & Jost, J. (2023). [Diversity enables the jump towards cooperation for the Traveler’s Dilemma. Scientific Reports. 13, 1441.](https://www.nature.com/articles/s41598-023-28600-5)
+---
   * Key finding: Players can achieve a cooperative, high-payoff equilibrium by escaping a local maximization and jumping to the global game where the payoff structure is different.
     * We study the Traveler's Dilemma, a social dilemma where individual incentives lead players to mutual undercutting.
     * We decompose the dilemma into a local and a global game.
     * Using evolutionary game theory and learning models, we find that diversity - meaning the presence of suboptimal strategies- enables players to move towards cooperation, improving both individual and collective payoffs.
   * Tools: Mathematical modelling - Evolutionary game theory 🧩 - Dynamical systems 📈
+---
 
 ### Preprints
 * **Ramírez, M.A.**, Kolumbus, Y., Nagel, R., Wolpert, D. & Jost, J. (2023). [Game manipulators - the strategic implications of binding contracts.](https://arxiv.org/abs/2311.10586)

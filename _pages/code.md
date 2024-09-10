@@ -5,25 +5,24 @@ permalink: /code/
 author_profile: true
 ---
 
-Blog
-======
+## Blog
 
 Read about different topics on my blog!
 
-*  Practical guide: how to contribute to open source Julia projects 🟣 💻 ([English](https://github.com/MA-Ramirez/BlogPosts/blob/main/1_PracticalGuide.md) - - [Spanish](https://github.com/MA-Ramirez/BlogPosts/blob/main/2_GuiaPractica.md))
+*  Practical guide: how to contribute to open source Julia projects 🟣 💻 ([English](https://github.com/MA-Ramirez/BlogPosts/blob/main/1_PracticalGuide.md) -  [Spanish](https://github.com/MA-Ramirez/BlogPosts/blob/main/2_GuiaPractica.md))
 * Guide: LaTeX in VSCode 📝 💻 ([English](https://github.com/MA-Ramirez/BlogPosts/blob/main/3_LaTeXinVSCode.md) - [Spanish](https://github.com/MA-Ramirez/BlogPosts/blob/main/4_LaTeXenVSCode.md))
 
-Workshops
-======
+## Workshops
 
 Learn about coding!
 
 * [Simulating branching processes in Python 🐍](https://github.com/MA-Ramirez/SimulatingBranchingProcesses)
 * [Agent based modelling and dynamical systems in Julia 🟣](https://github.com/JuliaDynamics/NonlinearDynamicsComplexSystemsCourse)
 
+---
 
-Programming Skills
-======
+## Programming Skills
+
 * Julia 🟣
 * Python 🐍
 * Java ☕️
@@ -31,14 +30,14 @@ Programming Skills
 * Bash 
 * Excel (Macros)
 
-Others
+Others:
   * Git
   * Slurm
   * LaTeX
   * Mathematica
 
-Contributions to open source scientific software
-======
+### Contributions to open source scientific software
+
 * Contributor to JuliaDynamics, a Julia-based software organisation for nonlinear dynamics and chaos
 * Contributor to Agents.jl, an agent-based modelling framework in Julia
 * Reviewer for ReScience C, a journal for replications in computational research
