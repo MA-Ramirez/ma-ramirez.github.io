@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "CV"
-permalink: /cv/
+title: "About me"
+permalink: /info/
 author_profile: true
 redirect_from:
   - /resume
@@ -11,9 +11,35 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Mathematics. Max Planck Institute for Mathematics in the Sciences and Max Planck Institute for Evolutionary Biology.
+* Diploma in Physics and Minor in Economics. Excellence scholarship. Univ. Andes
+  * International student at the Australian National University.
+
+---
+* Additional courses
+  * Mathematical foundations of stochastic processes (Universität Leipzig)
+  * Stochastic processes in graphs (Universität Leipzig)
+
+
+Lecturer experience
+======
+
+* 2023. Lecturer of the workshop *Introduction to modelling in Julia* at the Max Planck Institute for Evolutionary Biology
+* 2021. Lecturer of the *Simulating branching processes* module of the course Mathematical Biology at the University of Lübeck
+* 2021. Teaching assistant of the *Branching processes* module of the course Mathematical Biology at the University of Lübeck
+* 2020. Teaching assistant of the courses *Physics I* and *History of physics* at Univ. Andes
+* 2019. Teaching assistant at the *Physics Learning Center* of Univ. Andes
+* 2018. Teaching assistant of the course *Mathematical methods for physics* at Univ. Andes
+
+Leadership Experience
+======
+* 2024. Organiser of the international conference *Women in Evolutionary Biology*
+* 2023. Organiser of the *Annual Internal Symposium of the MPI for Evolutionary Biology*
+* 2023. Organiser of the *Introduction to modelling in Julia*
+
+*Full CV is available at request*
+
+<!-- 
 
 Work experience
 ======
@@ -31,15 +57,6 @@ Work experience
   * Github University
   * Duties included: Tagging issues
   * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
 Publications
 ======
@@ -57,8 +74,4 @@ Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+  {% endfor %}</ul>-->
