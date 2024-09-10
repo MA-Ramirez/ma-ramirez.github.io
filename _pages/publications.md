@@ -16,7 +16,7 @@ author_profile: true
     * Using evolutionary game theory and learning models, we find that diversity - meaning the presence of suboptimal strategies- enables players to move towards cooperation, improving both individual and collective payoffs.
   * Tools: Mathematical modelling - Evolutionary game theory 🧩 - Dynamical systems 📈
 
-### Pre-prints
+### Preprints
 * **Ramírez, M.A.**, Kolumbus, Y., Nagel, R., Wolpert, D. & Jost, J. (2023). [Game manipulators - the strategic implications of binding contracts.](https://arxiv.org/abs/2311.10586)
     * Key finding: Commitment devices, particularly binding contracts, can be used to manipulate players.
       * External agents, namely game manipulators, can leverage these devices to extract fees from players.

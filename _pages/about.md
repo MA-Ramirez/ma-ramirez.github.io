@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome!"
+title: "M.A. Ramírez"
 author_profile: true
 redirect_from: 
   - /about/
