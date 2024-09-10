@@ -37,7 +37,7 @@ redirect_from:
 * 2023 - Organiser of the *Annual Internal Symposium of the MPI for Evolutionary Biology*
 * 2023 - Organiser of the *Introduction to modelling in Julia*
 
-*Full CV is available at request*
+*Full CV is available upon request*
 
 <!-- 
 
