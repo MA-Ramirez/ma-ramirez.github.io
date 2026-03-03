@@ -33,7 +33,7 @@ const Header = () => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            Dr. Alexandra Chen
+            Dr. Maria Alejandra Ramirez
           </a>
 
           {/* Desktop Navigation */}

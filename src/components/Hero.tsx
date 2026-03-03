@@ -1,5 +1,6 @@
 import { ArrowDown, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileImage from "./Bild.jpg";
 
 const Hero = () => {
   return (
@@ -16,41 +17,39 @@ const Hero = () => {
           <div className="space-y-6 animate-slide-up">
             <div className="space-y-2">
               <p className="text-accent font-medium tracking-wide uppercase text-sm">
-                Applied Mathematics & Interdisciplinary Research
+                Mathematics & Interdisciplinary Research
               </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground leading-tight text-balance">
-                Dr. Alexandra Chen
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground leading-tight lg:whitespace-nowrap">
+                Dr. Alejandra Ramirez
               </h1>
             </div>
             
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Associate Professor at the Institute for Advanced Computational Sciences. 
-              My research focuses on developing mathematical frameworks that bridge 
-              theoretical foundations with real-world applications in computational biology, 
-              climate modeling, and complex systems.
+              Postdoctoral researcher at the Max Planck Institute for Evolutionary Anthropology.
+              My research focuses on developing mathematical frameworks for understanding strategic interaction and evolutionary dynamics in complex systems with real-world applications.
             </p>
 
             <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-accent" />
-                <span>Cambridge, MA</span>
+                <span>Leipzig, Germany</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent" />
                 <a href="mailto:achen@institute.edu" className="hover:text-foreground transition-colors">
-                  achen@institute.edu
+                  alejandra_ramirez [at] eva [dot] mpg [dot] de
                 </a>
               </div>
             </div>
 
             <div className="flex flex-wrap gap-2 pt-4">
               {[
-                "Multi-scale Modeling",
-                "Uncertainty Quantification",
-                "Computational Biology",
-                "Climate Modeling",
-                "Network Analysis",
-                "Scientific Machine Learning",
+                "Game Theory",
+                "Evolutionary Dynamics",
+                "Mathematical Modelling",
+                "Cultural Evolution",
+                "Mechanism Design",
+                "Dynamical Systems",
               ].map((interest, index) => (
                 <span
                   key={index}
@@ -68,9 +67,9 @@ const Hero = () => {
               <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-1">
                 <div className="w-full h-full rounded-xl bg-card overflow-hidden shadow-elevated">
                   <img
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=face"
-                    alt="Dr. Alexandra Chen"
-                    className="w-full h-full object-cover"
+                    src={profileImage}
+                    alt="Dr. Alejandra Ramirez"
+                    className="w-full h-full object-cover object-bottom"
                   />
                 </div>
               </div>
