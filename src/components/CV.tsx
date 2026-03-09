@@ -1,76 +1,86 @@
 import { useState } from "react";
-import { Download, GraduationCap, Briefcase, Award, Users, ChevronDown, ChevronUp } from "lucide-react";
+import { Download, Mail, GraduationCap, Briefcase, Presentation, Award, Users, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const education = [
   {
-    degree: "Ph.D. in Applied Mathematics",
-    institution: "Massachusetts Institute of Technology",
-    year: "2012",
-    details: "Thesis: Multi-scale methods for complex biological systems",
+    degree: "Postdoctoral Researcher",
+    institution: "Max Planck Institute for Evolutionary Anthropology",
+    year: "",
   },
   {
-    degree: "M.S. in Mathematics",
-    institution: "Stanford University",
-    year: "2008",
-  },
-  {
-    degree: "B.S. in Mathematics & Physics",
-    institution: "University of California, Berkeley",
-    year: "2006",
+    degree: "Ph.D. in Mathematics",
+    institution: "Max Planck Institute for Mathematics in the Sciences and Max Planck Institute for Evolutionary Biology",
+    year: "",
     details: "Summa Cum Laude",
   },
   {
-    degree: "Summer Research Fellow",
-    institution: "CERN",
-    year: "2005",
-    details: "Particle physics simulation research",
+    degree: "Research Internship*",
+    institution: "Ecole Polytechnique, Paris - EconophysiX",
+    year: "",
+    details: "",
   },
   {
-    degree: "Exchange Program",
-    institution: "ETH Zürich",
-    year: "2004",
+    degree: "B.S. Major in Physics and Minor in Economics",
+    institution: "Universidad de los Andes",
+    year: "",
+    details: "Thesis with Distinction",
+  },
+  {
+    degree: "International Student",
+    institution: "Australian National University",
+    year: "",
   },
 ];
 
 const positions = [
   {
-    title: "Associate Professor",
-    institution: "Institute for Advanced Computational Sciences",
-    period: "2019 – Present",
+    title: "Santa Fe Institute",
+    institution: "Santa Fe, USA",
+    period: "2026",
   },
   {
-    title: "Assistant Professor",
-    institution: "Institute for Advanced Computational Sciences",
-    period: "2014 – 2019",
+    title: "Center for Computational and Theoretical Biology",
+    institution: "Würzburg, Germany",
+    period: "2025",
   },
   {
-    title: "Postdoctoral Fellow",
-    institution: "Princeton University",
-    period: "2012 – 2014",
+    title: "Max Planck Institute for Human Development",
+    institution: "Berlin, Germany",
+    period: "2024",
   },
   {
-    title: "Research Associate",
-    institution: "Los Alamos National Laboratory",
-    period: "2011 – 2012",
+    title: "Informatics Institute of the University of Amsterdam",
+    institution: "Amsterdam, Netherlands",
+    period: "2024",
   },
   {
-    title: "Graduate Research Assistant",
-    institution: "MIT",
-    period: "2008 – 2011",
+    title: "University of Leipzig",
+    institution: "Leipzig, Germany",
+    period: "2024",
+  },
+  {
+    title: "Universidad de los Andes",
+    institution: "Bogota, Colombia",
+    period: "2024",
+  },
+  {
+    title: "Centre for Complexity Science of the Imperial College London",
+    institution: "London, UK",
+    period: "2022",
   },
 ];
 
 const awards = [
-  { name: "NSF CAREER Award", year: "2017" },
-  { name: "Sloan Research Fellowship", year: "2016" },
-  { name: "SIAM Outstanding Paper Prize", year: "2015" },
-  { name: "AWM Dissertation Prize", year: "2013" },
-  { name: "MIT Presidential Fellowship", year: "2008" },
-  { name: "NSF Graduate Research Fellowship", year: "2007" },
-  { name: "Barry Goldwater Scholarship", year: "2005" },
-  { name: "Berkeley Chancellor's Prize", year: "2004" },
+  { name: "Summa Cum Laude Doctoral Thesis Distinction", year: "2026" },
+  { name: "Complex Systems Summer School at the Santa Fe Institute", year: "2025" },
+  { name: "Best Talk Award at annual symposium MPI EvolBio", year: "2022" },
+  { name: "MPI MiS & MPI EvolBio Fellowship", year: "2021" },
+  { name: "Bachelor's Thesis Distinction", year: "2020" },
+  { name: "69th Nobel Laurate Meeting in Physics", year: "2019" },
+  { name: "Science at the Shine Dome invited by ANU", year: "2019" },
+  { name: "Scholarship 7th Congress of Scientific Python", year: "2019" },
 ];
 
 const INITIAL_ITEMS = 4;
@@ -94,10 +104,12 @@ const CV = () => {
               Academic background, positions, and honors.
             </p>
           </div>
-          <Button variant="hero" size="lg">
-            <Download className="h-4 w-4 mr-2" />
-            Download Full CV
-          </Button>
+          <a href="mailto:alejandra_ramirez@eva.mpg.de">
+            <Button variant="hero" size="lg">
+              <Mail className="h-4 w-4 mr-2" />
+              Request Full CV
+            </Button>
+          </a>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
@@ -108,7 +120,7 @@ const CV = () => {
                 <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
                   <GraduationCap className="h-5 w-5 text-accent" />
                 </div>
-                <h3 className="font-heading text-xl font-semibold">Education</h3>
+                <h3 className="font-heading text-xl font-semibold">Education and Academic Positions</h3>
               </div>
               <div className="space-y-6">
                 {displayedEducation.map((edu, index) => (
@@ -151,9 +163,9 @@ const CV = () => {
             <CardContent className="p-6">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Briefcase className="h-5 w-5 text-primary" />
+                  <Presentation className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="font-heading text-xl font-semibold">Academic Positions</h3>
+                <h3 className="font-heading text-xl font-semibold">Invited Talks</h3>
               </div>
               <div className="space-y-6">
                 {displayedPositions.map((pos, index) => (
@@ -245,14 +257,15 @@ const CV = () => {
             </div>
             <div className="flex flex-wrap gap-3">
               {[
-                "Multi-scale Modeling",
-                "Uncertainty Quantification",
-                "Computational Biology",
-                "Climate Modeling",
-                "Network Analysis",
-                "Stochastic PDEs",
-                "Scientific Machine Learning",
-                "Numerical Analysis",
+                "Theoretical Modelling",
+                "Game Theory",
+                "Evolutionary Dynamics",
+                "Mechanism Design",
+                "Cultural Evolution",
+                "Nonlinear Dynamics",
+                "Agent-based Modelling",
+                "Complex Systems",
+                "Open Source Software",
               ].map((interest, index) => (
                 <span
                   key={index}

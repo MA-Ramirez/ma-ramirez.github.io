@@ -11,13 +11,16 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Dr. Alexandra Chen | Applied Mathematics & Interdisciplinary Research</title>
+        <title>Dr. Alejandra Ramirez | Mathematics & Interdisciplinary Research</title>
         <meta 
           name="description" 
-          content="Associate Professor specializing in multi-scale modeling, computational biology, climate modeling, and complex systems. Explore publications, open-source code, and research." 
+          content="Postdoctoral Researcher specializing in game theory, evolutionary dynamics, and complex systems. Publications, research, open-source code, and contact information." 
         />
-        <meta name="keywords" content="applied mathematics, computational science, multi-scale modeling, research, publications" />
+        <meta name="keywords" content="Maria Alejandra Ramirez, Alejandra Ramirez, Game Theory, Evolutionary Dynamics, Complex Systems, Cultural Evolution, Modelling, Research, Publications, MPI EVA, MPI MIS, MPI Evolbio, Code, Academia" />
         <link rel="canonical" href="https://alexandrachen.com" />
+
+        {/* Favicon */}
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_ok.png" />
       </Helmet>
       
       <div className="min-h-screen bg-background">

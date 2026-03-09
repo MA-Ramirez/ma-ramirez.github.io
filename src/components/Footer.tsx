@@ -2,6 +2,7 @@ import { Mail, MapPin, Linkedin, Github, Twitter } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { SiBluesky } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
+import { FaResearchgate } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -32,23 +33,32 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="font-heading text-xl font-semibold mb-4">Quick Links</h3>
+
             <div className="space-y-2">
-              {["Publications", "Research Group", "Teaching", "Office Hours"].map((link) => (
-                <a
-                  key={link}
-                  href="#"
-                  className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                >
-                  {link}
-                </a>
-              ))}
-            </div>
+            {[
+              { label: "Research Institution", href: "https://www.eva.mpg.de/index/"},
+              { label: "Research Group", href: "https://www.eva.mpg.de/birthrites/" },
+              { label: "Request Full CV", href: "mailto:alejandra_ramirez@eva.mpg.de" },
+              { label: "Open Source Code", href: "https://github.com/MA-Ramirez" }
+            ].map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+              >
+              {link.label}
+            </a>
+            ))}
           </div>
+        </div>
 
           {/* Social */}
           <div>
             <h3 className="font-heading text-xl font-semibold mb-4">Connect</h3>
             <div className="flex gap-4">
+              {/* Bluesky */}
               <a
                 href="https://bsky.app/profile/ma-ramirez.bsky.social"
                 target="_blank"
@@ -58,6 +68,7 @@ const Footer = () => {
               >
               <SiBluesky className="h-5 w-5" />
               </a>
+              {/* GitHub */}
               <a
                 href="https://github.com/MA-Ramirez"
                 target="_blank"
@@ -67,6 +78,17 @@ const Footer = () => {
               >
               <FaGithub className="h-5 w-5" />
               </a>
+              {/* ResearchGate */}
+              <a
+                href="https://www.researchgate.net/profile/Maria-Ramirez-262"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ResearchGate"
+                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+              >
+              <FaResearchgate className="h-5 w-5" />
+              </a>
+              {/* LinkedIn */}
               <a
                 href="#"
                 target="_blank"

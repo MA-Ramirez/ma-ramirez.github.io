@@ -5,47 +5,40 @@ import { Badge } from "@/components/ui/badge";
 
 const repositories = [
   {
-    name: "MultiScale.jl",
-    description: "A Julia package for multi-scale mathematical modeling with automatic differentiation and GPU acceleration.",
+    name: "Agent based modelling and dynamical systems in Julia",
+    description: "Material for a full course on agent based modelling and nonlinear dynamics in Julia.",
     language: "Julia",
-    stars: 342,
-    forks: 48,
-    tags: ["Scientific Computing", "GPU"],
-    url: "https://github.com/achen/multiscale-jl",
+    tags: ["Course", "ABM", "Nonlinear Dynamics", "Complex Systems"],
+    url: "https://github.com/JuliaDynamics/NonlinearDynamicsComplexSystemsCourse",
   },
   {
-    name: "ClimateUQ",
-    description: "Uncertainty quantification tools for climate models. Implements ensemble methods and Bayesian inference.",
+    name: "Simulating branching processes in Python",
+    description: "Tutorial on how to simulate branching processes and how to calculate extinction probabilities.",
     language: "Python",
-    stars: 186,
-    forks: 31,
-    tags: ["Climate", "UQ", "Bayesian"],
-    url: "https://github.com/achen/climateuq",
+    tags: ["Tutorial", "Stochastic Processes"],
+    url: "https://github.com/MA-Ramirez/SimulatingBranchingProcesses",
   },
   {
-    name: "GraphNetworks",
-    description: "Efficient algorithms for analyzing complex networks with applications to biological systems.",
-    language: "Python",
-    stars: 127,
-    forks: 22,
-    tags: ["Networks", "Algorithms"],
-    url: "https://github.com/achen/graphnetworks",
+    name: "Reproducible workflows for scientific computing",
+    description: "Software carpentries workshop on reproducible data processing and analysis pipelines with R and Git.",
+    language: "R",
+    tags: ["Workshop", "Reproducible Research", "Data Processing and Analysis"],
+    url: "https://babeheim.com/2025-11-24-leipzig/",
   },
   {
-    name: "StochPDE",
-    description: "Numerical solvers for stochastic partial differential equations with adaptive mesh refinement.",
-    language: "C++",
-    stars: 89,
-    forks: 15,
-    tags: ["SPDE", "Numerical Methods"],
-    url: "https://github.com/achen/stochpde",
+    name: "Blog Posts: Coding practical guide",
+    description: ["Pratical guide: how to contribute to open source Julia projects.","Guide: LaTeX in VSCode."],
+    language: "Blog Posts (English - Spanish)",
+    tags: ["Blog Posts", "Open Source Contribution", "LaTeX"],
+    url: "https://github.com/MA-Ramirez/BlogPosts",
   },
 ];
 
 const languageColors: Record<string, string> = {
   Julia: "bg-purple-500",
-  Python: "bg-blue-500",
-  "C++": "bg-pink-500",
+  Python: "bg-green-600",
+  R: "bg-yellow-500",
+  "Blog Posts (English - Spanish)": "bg-gray-500",
 };
 
 const Code = () => {
@@ -55,7 +48,7 @@ const Code = () => {
         <div className="max-w-2xl mb-12">
           <h2 className="section-title mb-4">Open Source Code</h2>
           <p className="section-subtitle">
-            Research software and tools developed by our group, freely available on GitHub.
+            Open source software tutorials and tools, freely available on GitHub.
           </p>
         </div>
 
@@ -92,9 +85,17 @@ const Code = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  {repo.description}
-                </p>
+                {Array.isArray(repo.description) ? (
+                  <ul className="text-sm text-muted-foreground mb-4 leading-relaxed list-disc pl-5 space-y-1">
+                    {repo.description.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                    {repo.description}
+                 </p>
+                )}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {repo.tags.map((tag) => (
                     <Badge key={tag} variant="secondary" className="text-xs">
@@ -102,16 +103,17 @@ const Code = () => {
                     </Badge>
                   ))}
                 </div>
-                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                {/* <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <Star className="h-4 w-4" />
-                    <span>{repo.stars}</span>
+                    {repo.stars !== undefined && <span>{repo.stars}</span>}
                   </div>
                   <div className="flex items-center gap-1">
                     <GitFork className="h-4 w-4" />
-                    <span>{repo.forks}</span>
+                    {repo.forks !== undefined && <span>{repo.forks}</span>}
                   </div>
                 </div>
+                */}
               </CardContent>
             </Card>
           ))}
@@ -119,8 +121,15 @@ const Code = () => {
 
         <div className="mt-12 text-center">
           <Button variant="accent" size="lg">
+            <a
+              href="https://github.com/MA-Ramirez"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center"
+            >
             <Github className="h-5 w-5 mr-2" />
             View All Repositories
+            </a>
           </Button>
         </div>
       </div>

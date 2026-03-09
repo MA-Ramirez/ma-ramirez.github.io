@@ -5,58 +5,49 @@ import { Badge } from "@/components/ui/badge";
 
 const publications = [
   {
-    year: 2024,
-    title: "Bridging scales in biological systems through adaptive mathematical frameworks",
-    authors: "Chen, A., Williams, R., & Patel, S.",
-    journal: "Nature Computational Science",
-    volume: "4(3), 234-248",
-    tags: ["Multi-scale Modeling", "Biology"],
-    doi: "10.1038/s43588-024-00234-x",
+    year: 2025,
+    title: "Non-coercive extortion in game theory",
+    authors: "Ramirez, M.A., Nagel, R., Wolpert, D., & Jost, J.",
+    journal: "Preprint",
+    volume: "12, 2025",
+    tags: ["Game Theory", "Mechanism Design"],
+    link: "https://arxiv.org/pdf/2507.21795",
   },
   {
-    year: 2024,
-    title: "Uncertainty quantification in climate models: A mathematical perspective",
-    authors: "Chen, A., & Thompson, J.",
-    journal: "Journal of Computational Physics",
-    volume: "498, 112456",
-    tags: ["Climate", "UQ"],
-    doi: "10.1016/j.jcp.2024.112456",
-  },
-  {
-    year: 2023,
-    title: "Graph-based methods for complex network analysis in interdisciplinary research",
-    authors: "Chen, A., Liu, M., & Garcia, E.",
-    journal: "SIAM Review",
-    volume: "65(4), 891-923",
-    tags: ["Networks", "Graph Theory"],
-    doi: "10.1137/22M1234567",
+    year: 2025,
+    title: "Chaos and noise in evolutionary game dynamics",
+    authors: "Ramirez, M.A., Datseris,G. & Traulsen, A.",
+    journal: "Preprint",
+    volume: "24, 2025",
+    tags: ["Evolutionary Game Theory", "Population Dynamics", "Nonlinear Dynamics"],
+    link: "https://arxiv.org/pdf/2504.00028",
   },
   {
     year: 2023,
-    title: "Mathematical foundations of machine learning for scientific computing",
-    authors: "Chen, A., & Kumar, V.",
-    journal: "Acta Numerica",
-    volume: "32, 1-87",
-    tags: ["ML", "Scientific Computing"],
-    doi: "10.1017/S0962492923000012",
+    title: "Game manipulators - the strategic implications of binding contracts",
+    authors: "Ramirez, M.A., Kolumbus, Y., Nagel, R., Wolpert, D. & Jost, J.",
+    journal: "Preprint",
+    volume: "28, 2023",
+    tags: ["Game Theory", "Evolutionary Game Theory", "Mechanism Design", "Algorithmic Game Theory"],
+    link: "https://arxiv.org/pdf/2311.10586",
   },
   {
-    year: 2022,
-    title: "Stochastic PDEs in population dynamics: Theory and applications",
-    authors: "Chen, A., Roberts, B., & Park, H.",
-    journal: "Bulletin of Mathematical Biology",
-    volume: "84(5), 112",
-    tags: ["Stochastic", "Population Dynamics"],
-    doi: "10.1007/s11538-022-01012-3",
+    year: 2023,
+    title: "Diversity enables the jump towards cooperation for the Traveler’s Dilemma",
+    authors: "Ramirez, M.A., Smerlak, M., Traulsen, A. & Jost, J.",
+    journal: "Scientific Reports",
+    volume: "13, 114",
+    tags: ["Game Theory", "Evolutionary Game Theory", "Population Dynamics", "Social Dilemmas"],
+    link: "https://www.nature.com/articles/s41598-023-28600-5",
   },
   {
-    year: 2022,
-    title: "Numerical methods for high-dimensional integration in computational finance",
-    authors: "Chen, A., & Mueller, K.",
-    journal: "Mathematics of Computation",
-    volume: "91(334), 789-812",
-    tags: ["Numerical Methods", "Finance"],
-    doi: "10.1090/mcom/3712",
+    year: 2020,
+    title: "Cost calculation of an altruistic act for the plasmids-in-bacteria system through probabilistic simulations",
+    authors: "Ramirez, M.A.",
+    journal: "Seneca institutional repository",
+    volume: "95, 2020",
+    tags: ["Theoretical Modelling", "Mathematical Biology"],
+    link: "https://repositorio.uniandes.edu.co/server/api/core/bitstreams/32a1d1fb-5317-40c0-9696-42d55212d87e/content",
   },
 ];
 
@@ -75,7 +66,7 @@ const Publications = () => {
         <div className="max-w-2xl mb-12">
           <h2 className="section-title mb-4">Publications</h2>
           <p className="section-subtitle">
-            Selected peer-reviewed publications in applied mathematics, computational science, and interdisciplinary research.
+            Selected peer-reviewed publications in game theory, mathematical modelling, and interdisciplinary research.
           </p>
         </div>
 
@@ -129,16 +120,18 @@ const Publications = () => {
                         {tag}
                       </Badge>
                     ))}
-                    <a
-                      href={`https://doi.org/${pub.doi}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="ml-auto flex items-center gap-1 text-sm text-accent hover:underline"
-                    >
-                      <FileText className="h-4 w-4" />
-                      DOI
-                      <ExternalLink className="h-3 w-3" />
-                    </a>
+                    {pub.link && (
+                      <a
+                        href={pub.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-auto flex items-center gap-1 text-sm text-accent hover:underline"
+                      >
+                        <FileText className="h-4 w-4" />
+                        Paper
+                        <ExternalLink className="h-3 w-3" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -146,12 +139,20 @@ const Publications = () => {
           ))}
         </div>
 
-        <div className="mt-8 text-center">
-          <Button variant="outline" size="lg">
-            View All Publications on Google Scholar
+        {/*<div className="mt-8 text-center">
+          <Button variant="outline" size="lg" asChild>
+            <a
+              href="https://www.researchgate.net/profile/Maria-Ramirez-262"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center"
+            >
+            View All Publications
             <ExternalLink className="h-4 w-4 ml-2" />
+            </a>
           </Button>
         </div>
+        */}
       </div>
     </section>
   );
