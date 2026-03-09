@@ -17,10 +17,11 @@ const Index = () => {
           content="Postdoctoral Researcher specializing in game theory, evolutionary dynamics, and complex systems. Publications, research, open-source code, and contact information." 
         />
         <meta name="keywords" content="Maria Alejandra Ramirez, Alejandra Ramirez, Game Theory, Evolutionary Dynamics, Complex Systems, Cultural Evolution, Modelling, Research, Publications, MPI EVA, MPI MIS, MPI Evolbio, Code, Academia" />
-        <link rel="canonical" href="https://alexandrachen.com" />
+        <link rel="canonical" href="https://ma-ramirez.github.io/" />
 
         {/* Favicon */}
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_ok.png" />
+        {/*<link rel="icon" type="image/png" sizes="16x16" href="/favicon_ok.png" />*/}
+        <link rel="icon" href="/favicon.ico" />
       </Helmet>
       
       <div className="min-h-screen bg-background">
