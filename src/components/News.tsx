@@ -7,6 +7,7 @@ const newsItems = [
     title: "Summa cum laude - Successful Dissertation Defense",
     description: "Successfully defended dissertation in Mathematics. Doctoral research conducted at the Max Planck Institute for Mathematics in the Sciences and Max Planck Institute for Evolutionary Biology.",
     tag: "Highlight",
+    link: "https://www.mis.mpg.de/news/summa-cum-laude-congratulations-on-successful-dissertation-defense"
   },
   {
     date: "2026",

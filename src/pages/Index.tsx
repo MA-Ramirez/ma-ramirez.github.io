@@ -16,7 +16,7 @@ const Index = () => {
           name="description" 
           content="Postdoctoral Researcher specializing in game theory, evolutionary dynamics, and complex systems. Publications, research, open-source code, and contact information." 
         />
-        <meta name="keywords" content="Maria Alejandra Ramirez, Alejandra Ramirez, Game Theory, Evolutionary Dynamics, Complex Systems, Cultural Evolution, Modelling, Research, Publications, MPI EVA, MPI MIS, MPI Evolbio, Code, Academia" />
+        <meta name="keywords" content="Maria Alejandra Ramirez, Alejandra Ramirez, Game Theory, Evolutionary Dynamics, Complex Systems, Cultural Evolution, Modelling, Research, Publications, MPI EVA, MPI MIS, MPI Evolbio, MPI, Code, Academia" />
         <link rel="canonical" href="https://ma-ramirez.github.io/" />
 
         {/* Favicon */}
