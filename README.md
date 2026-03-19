@@ -50,6 +50,8 @@ This project is built with:
 - Tailwind CSS
 
 ## To deploy website with gh-pages
+1. Push changes to repository
+2. Deploy changes via gh-pages:
 ```
 npm run deploy
 ```
